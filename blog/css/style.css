@@ -90,7 +90,10 @@ h1{
 }
 
 .highlight{
+    display: inline-block;
     font-family: ultra, Georgia, serif;
+    border: 1px solid red;
+
 }
 /* General Setup and Defaults*/
 *{
@@ -111,6 +114,13 @@ body {
 
 
 /* Layout */
+header{
+    padding: 0.5rem 0rem 1rem 0rem;
+}
+nav{
+    margin-top: 3rem;
+}
+
 .main-section{
     display: grid;
     grid-template-columns: 4fr 1fr;
