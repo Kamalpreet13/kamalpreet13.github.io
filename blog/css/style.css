@@ -86,14 +86,33 @@ hq,h2,h3,h4{
 h1{
     font-size: 3rem;
     letter-spacing: 0.25rem;
-    transform: rotate(10deg);
+    transform: rotate(-5deg);
 }
 
 .highlight{
     display: inline-block;
     font-family: ultra, Georgia, serif;
-    border: 1px solid red;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    color: red;
+    background-color: #333438;
+    box-shadow: 5px 5px 4px -1px #888;
+}
 
+button {
+    display: inline-block;
+    font-family: ultra, georgia, sans-serif;
+    border: 1px solid black;
+    padding: 1rem 1rem;
+    border-radius: 0.3rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    color: #F23545;
+    background-color: #333438;
+    box-shadow: 5px 5px 4px -1px #888;
 }
 /* General Setup and Defaults*/
 *{
@@ -109,8 +128,6 @@ body {
     width: 90%;
     min-width: 56.25rem;
 }
-
-
 
 
 /* Layout */
@@ -133,8 +150,16 @@ article{
 }
 
 aside{
-    grid-column: 2 / 3;
+    grid-column: 2/3;
     grid-row: 1;
+    border-left: 1px solid #333438;
+    padding-left: 0.75rem;
+
+}
+
+aside p{
+    border-bottom: 1px solid #333438;
+    padding-bottom: 0.5rem;
 
 }
 
@@ -162,11 +187,31 @@ figure{
 
 .subsection figure{
     margin: 0rem 0.25rem;
-    background-color: #F2E4C9;
+    background-color: #D9A273;
 }
 
 .subsection figure figcaption{
     padding: 0.5rem 0.5rem;
 
 
+}
+/* Links and Navigation*/
+
+a{
+    text-decoration: none;
+
+}
+
+nav a {
+    display: inline-block;
+    padding: 1.25rem 2rem;
+    font-size: 1.5rem;
+    font-family: lato, Arial, sans-serif;
+    color: #ff6a00;
+    text-decoration: none;
+    border: 0.0625rem none #33658A;
+}
+nav {
+    border-top: 1px solid #333438;
+    border-bottom: 1px solid #333438;
 }
