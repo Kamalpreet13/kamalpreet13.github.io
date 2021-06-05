@@ -72,6 +72,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "roz";
+    src: url('../fonts/serif/rozhaone-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* Typography*/
 
@@ -82,16 +88,45 @@ hq,h2,h3,h4{
     font-family: lato, HarvestItal,sans-serif ;
     letter-spacing: 0.0325rem; 
 }
+aside h3 {
+    font-size: 1rem;
+}
 
+aside p {
+    font-size: .75rem;
+}
+
+.expand {
+    display: flex;
+    padding: .25rem 0 .5rem 0;
+    font-size: .25rem;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+    transform: rotate(-4deg);
+    text-shadow: 1px 1px 2px #1f315a;
+    color: #A66641
+}
 h1{
     font-size: 3rem;
     letter-spacing: 0.25rem;
     transform: rotate(-5deg);
 }
 
-.highlight{
+.link {
+    text-align: right;
+    text-decoration: none;
+}
+
+.highlight {
     display: inline-block;
     font-family: ultra, Georgia, serif;
+    font-size: 3.25rem;
+    text-transform: uppercase;
+    text-shadow: 3px 1px 5px #1f315a;
+    letter-spacing: 0.25rem;
     border: 1px solid black;
     padding: 1rem 2rem;
     border-radius: 0.3rem;
@@ -102,18 +137,7 @@ h1{
     box-shadow: 5px 5px 4px -1px #888;
 }
 
-button {
-    display: inline-block;
-    font-family: ultra, georgia, sans-serif;
-    border: 1px solid black;
-    padding: 1rem 1rem;
-    border-radius: 0.3rem;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    color: #F23545;
-    background-color: #333438;
-    box-shadow: 5px 5px 4px -1px #888;
-}
+
 /* General Setup and Defaults*/
 *{
     box-sizing: border-box;
@@ -127,6 +151,7 @@ body {
     margin: 1.5rem auto;
     width: 90%;
     min-width: 56.25rem;
+    background: #888;
 }
 
 
@@ -136,6 +161,10 @@ header{
 }
 nav{
     margin-top: 3rem;
+}
+
+main{
+    padding: 2rem;
 }
 
 .main-section{
@@ -150,7 +179,7 @@ article{
 }
 
 aside{
-    grid-column: 2/3;
+    grid-column: 2 / 3;
     grid-row: 1;
     border-left: 1px solid #333438;
     padding-left: 0.75rem;
@@ -160,7 +189,6 @@ aside{
 aside p{
     border-bottom: 1px solid #333438;
     padding-bottom: 0.5rem;
-
 }
 
 .subsection{
@@ -176,19 +204,21 @@ figure{
     margin: 0px;
 }
 .article-image{
-    width: 33%;
+    width: 36%;
     float: left;
-    margin-right: 0.75rem;
+    margin-right: 1.75rem 0.75rem 0rem;
 
 }
 .subsection{
     margin: 1rem 0rem;
 }
 
-.subsection figure{
-    margin: 0rem 0.25rem;
-    background-color: #D9A273;
-}
+    .subsection figure {
+        margin: 0rem 0.25rem;
+        background-color: #D9A273;
+        font-family: roz, Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+    }
 
 .subsection figure figcaption{
     padding: 0.5rem 0.5rem;
@@ -214,4 +244,46 @@ nav a {
 nav {
     border-top: 1px solid #333438;
     border-bottom: 1px solid #333438;
+    margin-bottom: .75rem;
+}
+
+    nav a:active, a:focus, a:hover {
+        text-transform: uppercase !important;
+        text-decoration: line-through !important;
+        color: #732C2C !important;
+        transform: rotate(4deg);
+    }
+
+    nav a:link, a:visited {
+        color: #33658A;
+        text-decoration: none;
+    }
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: #732C2C;
+}
+
+    footer a:active, :link, a:visited, a:focus, a:hover {
+        color: #8a7333;
+        text-decoration: none;
+        text-transform: none;
+        text-decoration: none;
+    }
+
+button {
+    display: inline-block;
+    font-family: ultra, georgia, sans-serif;
+    font-size: 1.33rem;
+    text-transform: uppercase;
+    text-shadow: 3px 1px 5px #1f315a;
+    margin: 2.25rem 0rem;
+    border: 1px solid black;
+    padding: 1rem 1rem;
+    border-radius: 0.3rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    color: #F23545;
+    background-color: #333438;
+    box-shadow: 5px 5px 4px -1px #888;
 }
