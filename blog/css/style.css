@@ -96,12 +96,6 @@ aside p {
     font-size: .65rem;
 }
 
-/*.expand {
-    display: flex;
-    padding: .25rem 0 .5rem 0;
-    font-size: .25rem;
-} */
-
 h1 {
     font-size: 3rem;
     letter-spacing: 0.25rem;
@@ -109,12 +103,7 @@ h1 {
     text-shadow: 1px 1px 2px #1f315a;
     color: #00837b
 }
-/*h1{
-    font-size: 3rem;
-    letter-spacing: 0.25rem;
-    transform: rotate(-5deg);
-}
-    */
+
 .link {
     text-align: right;
     text-decoration: none;
@@ -204,7 +193,7 @@ figure{
 .article-image {
     width: 40%;
     float: left;
-    margin-right: /*1.75rem 0.75rem 0rem*/ 0.35rem;
+    margin-right: 0.35rem;
 }
 .subsection{
     margin: 1rem 0rem;
@@ -245,8 +234,6 @@ nav {
 }
 
     nav a:active, a:focus, a:hover {
-      /*  text-transform: uppercase !important;*/
-       /* text-decoration: line-through !important; */
         color: #732C2C !important;
         transform: rotate(6deg);
     }
@@ -258,7 +245,7 @@ nav {
 footer {
     
     display: table-footer-group; 
-   /*justify-content: space-between; */ 
+ 
     color: #732C2C;
 }
 
